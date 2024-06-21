@@ -204,6 +204,8 @@ class ImageUploader
      */
     public function getFilePath($path, $imageName)
     {
+        $path = $path ? $path : '';
+        $imageName = $imageName ? $imageName : '';
         return rtrim($path, '/') . '/' . ltrim($imageName, '/');
     }
 
